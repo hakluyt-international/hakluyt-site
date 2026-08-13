@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Financial Intelligence Specialist | Hakluyt International</title>
+
+  <meta
+    name="description"
+    content="Hakluyt International is seeking an experienced financial intelligence and forensic accounting specialist for contract work supporting its Eastern European operations."
+  />
+
+  <meta name="theme-color" content="#1e1e1e" />
+
+  <!-- Keep this page out of normal search engine indexing -->
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+
+  <style>
+    :root{
+      --bg: #1e1e1e;
+      --panel: #262626;
+      --panel2: #222222;
+      --text: #e9eef5;
+      --muted: #b9c3d1;
+      --dim: rgba(233, 238, 245, 0.66);
+      --line: rgba(233, 238, 245, 0.12);
+      --accent: #2596be;
+      --accentSoft: rgba(37, 150, 190, 0.16);
+      --shadow: 0 18px 60px rgba(0,0,0,0.45);
+      --max: 980px;
+      --radius: 16px;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          1000px 700px at 25% -10%,
+          rgba(37,150,190,0.10),
+          transparent 55%
+        ),
+        radial-gradient(
+          800px 600px at 90% 5%,
+          rgba(37,150,190,0.05),
+          transparent 60%
+        ),
+        var(--bg);
+
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    a:hover{
+      opacity:0.92;
+    }
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 20px;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+
+      background:rgba(30,30,30,0.74);
+      backdrop-filter:blur(10px);
+
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:14px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+
+      font-weight:600;
+      letter-spacing:0.2px;
+      white-space:nowrap;
+    }
+
+    .mark{
+      width:10px;
+      height:10px;
+      border-radius:999px;
+
+      background:var(--accent);
+      box-shadow:0 0 0 6px var(--accentSoft);
+
+      flex:0 0 auto;
+    }
+
+    .headerLabel{
+      color:var(--muted);
+      font-size:13px;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+    }
+
+    .hero{
+      padding:82px 0 48px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .kicker{
+      margin:0 0 14px;
+
+      color:var(--accent);
+
+      text-transform:uppercase;
+      letter-spacing:0.18em;
+      font-size:12px;
+    }
+
+    h1{
+      margin:0 0 18px;
+
+      font-size:clamp(36px, 5vw, 58px);
+      line-height:1.07;
+      letter-spacing:-0.025em;
+      font-weight:610;
+
+      max-width:850px;
+    }
+
+    .lede{
+      margin:0;
+      max-width:72ch;
+
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .statusRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:26px;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+
+      padding:8px 12px;
+
+      border-radius:999px;
+      border:1px solid rgba(233,238,245,0.14);
+
+      background:rgba(38,38,38,0.42);
+
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    .pillAccent{
+      border-color:rgba(37,150,190,0.40);
+      background:rgba(37,150,190,0.08);
+      color:var(--text);
+    }
+
+    section{
+      padding:42px 0;
+      border-bottom:1px solid var(--line);
+    }
+
+    .sectionHead{
+      margin-bottom:18px;
+    }
+
+    .sectionHead h2{
+      margin:0;
+
+      font-size:21px;
+      letter-spacing:-0.01em;
+      font-weight:610;
+    }
+
+    .textBlock{
+      padding:20px;
+
+      border-radius:var(--radius);
+
+      background:rgba(38,38,38,0.46);
+      border:1px solid var(--line);
+    }
+
+    .textBlock p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .textBlock p + p{
+      margin-top:13px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+
+    .card{
+      padding:20px;
+
+      border-radius:var(--radius);
+
+      background:rgba(38,38,38,0.56);
+      border:1px solid var(--line);
+    }
+
+    .card h3{
+      margin:0 0 10px;
+
+      font-size:15px;
+      font-weight:610;
+      letter-spacing:0.2px;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .requirements{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .requirements li{
+      position:relative;
+      padding:13px 0 13px 22px;
+
+      color:var(--muted);
+      font-size:14px;
+
+      border-bottom:1px solid rgba(233,238,245,0.08);
+    }
+
+    .requirements li:last-child{
+      border-bottom:none;
+    }
+
+    .requirements li::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:21px;
+
+      width:6px;
+      height:6px;
+
+      border-radius:50%;
+      background:var(--accent);
+    }
+
+    .requirements strong{
+      color:var(--text);
+      font-weight:600;
+    }
+
+    .callout{
+      padding:22px;
+
+      border-radius:var(--radius);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(37,150,190,0.12),
+          rgba(38,38,38,0.55)
+        );
+
+      border:1px solid rgba(37,150,190,0.26);
+      box-shadow:var(--shadow);
+    }
+
+    .callout h2{
+      margin:0 0 10px;
+      font-size:18px;
+      font-weight:610;
+    }
+
+    .callout p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .callout p + p{
+      margin-top:12px;
+    }
+
+    .button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+
+      margin-top:18px;
+      padding:12px 17px;
+
+      border-radius:999px;
+      border:1px solid rgba(37,150,190,0.55);
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(37,150,190,0.18),
+          rgba(37,150,190,0.06)
+        );
+
+      box-shadow:0 16px 40px rgba(0,0,0,0.35);
+
+      color:var(--text);
+      font-size:14px;
+    }
+
+    .button:hover{
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(37,150,190,0.22),
+          rgba(37,150,190,0.08)
+        );
+    }
+
+    .fine{
+      font-size:12px !important;
+      color:rgba(233,238,245,0.60) !important;
+    }
+
+    footer{
+      padding:28px 0 42px;
+
+      color:rgba(233,238,245,0.62);
+      font-size:12px;
+    }
+
+    .footerGrid{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    @media (max-width:760px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero{
+        padding-top:58px;
+      }
+
+      .headerLabel{
+        display:none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="nav">
+
+        <a
+          class="brand"
+          href="https://www.hakluyt.international/"
+          aria-label="Hakluyt International"
+        >
+          <span class="mark" aria-hidden="true"></span>
+          <span>Hakluyt International</span>
+        </a>
+
+        <div class="headerLabel">
+          Restricted circulation
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <div class="wrap">
+
+      <section class="hero">
+
+        <p class="kicker">
+          Eastern Europe · Specialist requirement
+        </p>
+
+        <h1>
+          Financial Intelligence and Forensic Accounting Specialist
+        </h1>
+
+        <p class="lede">
+          Hakluyt International is seeking an experienced financial
+          intelligence practitioner for contract assignments supporting
+          our Eastern European operations. The requirement sits at the
+          intersection of forensic accounting, financial intelligence,
+          sanctions analysis, illicit finance, and technical payment
+          infrastructure.
+        </p>
+
+        <div class="statusRow">
+
+          <span class="pill pillAccent">
+            Contract
+          </span>
+
+          <span class="pill">
+            Remote
+          </span>
+
+          <span class="pill">
+            Eastern Europe
+          </span>
+
+          <span class="pill">
+            Kyiv / Vinnytsia verification
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <div class="sectionHead">
+          <h2>The requirement</h2>
+        </div>
+
+        <div class="textBlock">
+
+          <p>
+            We are interested in practitioners who can reconstruct the
+            movement of money where the available record is incomplete,
+            deliberately obscured, politically sensitive, or spread across
+            multiple jurisdictions and payment systems.
+          </p>
+
+          <p>
+            The successful contractor should be comfortable moving between
+            conventional accounting records, banking data, corporate
+            structures, sanctions information, open source intelligence,
+            payment infrastructure, and informal value transfer networks.
+            The objective is not simply to identify an anomalous transaction.
+            It is to explain the network, the mechanism, the counterparties,
+            and the probable purpose behind it.
+          </p>
+
+          <p>
+            Previous work involving conflict finance, organized crime,
+            sanctions evasion, corruption, defence procurement, asset
+            tracing, or complex cross-border investigations is particularly
+            relevant.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <div class="sectionHead">
+          <h2>Core qualifications</h2>
+        </div>
+
+        <div class="textBlock">
+
+          <ul class="requirements">
+
+            <li>
+              Demonstrable professional experience in
+              <strong>financial intelligence, forensic accounting,
+              forensic audit, asset tracing, or complex financial
+              investigations.</strong>
+            </li>
+
+            <li>
+              Strong working knowledge of
+              <strong>AML and counter terrorist financing methodologies,
+              FATF typologies, sanctions compliance, beneficial ownership
+              analysis, and financial crime indicators.</strong>
+            </li>
+
+            <li>
+              Experience reconstructing
+              <strong>layered transaction structures, nominee ownership,
+              shell companies, intermediary networks, mule accounts,
+              correspondent banking relationships, and cross-border
+              movement of funds.</strong>
+            </li>
+
+            <li>
+              Previous exposure to
+              <strong>war crimes investigations, conflict finance,
+              military or defence related investigations, organized crime,
+              corruption investigations, sanctions enforcement, or
+              intelligence-led financial investigations</strong>
+              is strongly preferred.
+            </li>
+
+            <li>
+              Ability to distinguish evidential findings from analytical
+              inference and to document a financial trail to a standard
+              suitable for scrutiny by legal, compliance, intelligence,
+              or investigative professionals.
+            </li>
+
+            <li>
+              Familiarity with
+              <strong>corporate registries, leaked datasets, sanctions
+              lists, adverse media, procurement records, customs data,
+              blockchain records, and other lawful OSINT sources.</strong>
+            </li>
+
+            <li>
+              Relevant professional credentials are desirable. These may
+              include <strong>CFE, CAMS, CFCS, CPA/CA/ACCA, forensic
+              accounting credentials, financial crime qualifications,
+              or equivalent investigative experience.</strong>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <div class="sectionHead">
+          <h2>Conflict and illicit finance</h2>
+        </div>
+
+        <div class="grid">
+
+          <div class="card">
+
+            <h3>Informal value transfer</h3>
+
+            <p>
+              Practical experience identifying the use of hawala and
+              hawala-like settlement networks, cash couriers, mirror
+              transactions, trade settlement, informal remittance channels,
+              underground banking, and other systems capable of moving value
+              without a conventional end-to-end banking trail.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>Conflict-zone typologies</h3>
+
+            <p>
+              Familiarity with sanctions circumvention, intermediary
+              jurisdictions, procurement fronts, cash-intensive businesses,
+              commodity settlement, cryptocurrency, payment agents,
+              high-risk exchange networks, and organized-crime-linked
+              financial structures encountered in Eastern Europe and the
+              former Soviet space.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>Network analysis</h3>
+
+            <p>
+              Ability to move from individual transactions to a defensible
+              assessment of relationships between people, companies,
+              accounts, wallets, intermediaries, jurisdictions, and
+              commercial activity.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>Source discipline</h3>
+
+            <p>
+              Candidates should be comfortable working with imperfect
+              information and should know when a pattern is significant,
+              when it is merely unusual, and when the available evidence
+              does not support a conclusion.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <div class="sectionHead">
+          <h2>Technical background</h2>
+        </div>
+
+        <div class="textBlock">
+
+          <p>
+            Backend development experience is not mandatory, but it is
+            highly desirable. We are particularly interested in candidates
+            who understand financial systems well enough to work directly
+            with engineers rather than treating payment infrastructure as
+            a black box.
+          </p>
+
+          <ul class="requirements">
+
+            <li>
+              Experience developing or integrating
+              <strong>custom APIs, transaction monitoring systems,
+              reconciliation tools, financial data pipelines, or
+              investigative analytics platforms.</strong>
+            </li>
+
+            <li>
+              Familiarity with
+              <strong>ISO 20022 financial messaging</strong>
+              and structured payment data.
+            </li>
+
+            <li>
+              Practical understanding of
+              <strong>SWIFT, correspondent banking, IBAN based payments,
+              SEPA payment infrastructure, and cross-border settlement.</strong>
+            </li>
+
+            <li>
+              Familiarity with Canadian payment infrastructure, including
+              <strong>Payments Canada</strong>, is strongly desirable.
+            </li>
+
+            <li>
+              Familiarity with United Kingdom payment infrastructure,
+              including systems operated by or associated with
+              <strong>Pay.UK</strong>, is strongly desirable.
+            </li>
+
+            <li>
+              Experience querying large financial datasets using
+              <strong>SQL, Python, APIs, graph tools, or equivalent
+              analytical systems</strong> is advantageous.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <div class="sectionHead">
+          <h2>Language and location</h2>
+        </div>
+
+        <div class="grid">
+
+          <div class="card">
+
+            <h3>Languages</h3>
+
+            <p>
+              Minimum professional working proficiency of
+              <strong>B2 English</strong> is required.
+              Candidates should also have at least
+              <strong>B1 proficiency in either Ukrainian or Russian</strong>,
+              with working ability in both strongly preferred.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>Location</h3>
+
+            <p>
+              The work is primarily remote. Successful candidates must,
+              however, be able to attend an in-person meeting in
+              <strong>Kyiv or Vinnytsia, Ukraine</strong> for identity,
+              qualification, and credential verification before undertaking
+              sensitive assignments.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <div class="sectionHead">
+          <h2>Engagement</h2>
+        </div>
+
+        <div class="textBlock">
+
+          <p>
+            This is not a salaried generalist position. Engagements are
+            contract based and assigned according to subject matter,
+            jurisdiction, availability, and the requirements of individual
+            matters.
+          </p>
+
+          <p>
+            Some assignments may be narrow and analytical. Others may require
+            sustained reconstruction of financial activity across multiple
+            entities, jurisdictions, languages, and data sources.
+          </p>
+
+          <p>
+            Applicants should be capable of working independently,
+            maintaining disciplined records, handling sensitive commercial
+            information, and producing concise written findings for senior
+            decision makers.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <div class="callout">
+
+          <h2>Expression of interest</h2>
+
+          <p>
+            Initial correspondence should be concise. Send a curriculum
+            vitae or professional summary together with your principal areas
+            of financial intelligence experience, relevant jurisdictions,
+            languages, technical capabilities, and professional
+            qualifications.
+          </p>
+
+          <p>
+            Do not send classified information, protected investigative
+            material, client records, operational files, or evidence from
+            previous engagements.
+          </p>
+
+          <p>
+            Suitable candidates will be contacted directly. References and
+            credentials may be independently verified before engagement.
+          </p>
+
+          <a
+            class="button"
+            href="mailto:hr@hakluyt.international?subject=Financial%20Intelligence%20Specialist"
+          >
+            hr@hakluyt.international
+          </a>
+
+        </div>
+
+      </section>
+
+
+      <footer>
+
+        <div class="footerGrid">
+
+          <div class="pill">
+            Hakluyt International
+          </div>
+
+          <div>
+
+            <div>
+              Private risk intelligence and advisory.
+            </div>
+
+            <div class="fine">
+              © <span id="y"></span> Hakluyt International.
+              This notice is intended for direct circulation.
+            </div>
+
+          </div>
+
+        </div>
+
+      </footer>
+
+    </div>
+
+  </main>
+
+
+  <script>
+    document.getElementById("y").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
